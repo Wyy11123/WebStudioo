@@ -1,0 +1,39 @@
+.features{
+    margin-top: 25px;
+    &-list{ 
+        @include tab(768px){
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        @include desc(1199px){
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+         }
+    }
+    &-list-item{
+        margin-bottom: 30px;
+    }
+    &-list-text{
+        color: #757575 ;
+        font-size: 15px;
+    }
+    &-list-title{
+        margin-bottom: 10px;
+        font-size: 10px;
+        margin-top: 30px;
+    }
+    &-list-box{
+        align-items: center;
+        justify-content: center;
+        background-color: #F5F4FA;
+        width: 270px;
+        height: 120px;
+    }
+    &-icon{
+        margin-top: 11%;
+        margin-left: 35%;
+    }
+}

@@ -1,0 +1,21 @@
+.portfolio{
+    padding: 94px 0;
+    &-bar{
+        display: flex;
+        justify-content: flex-start;
+        gap: 8px;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+        @include tab(768px) {
+            justify-content: center;
+        }
+    }
+    &-button{
+        border-radius: 4px;
+        letter-spacing: 0.03em;
+        color: #000;
+        background-color: rgba(245, 244, 250, 1);
+        padding: 6px 25px;
+        font-size: 16px;
+    }
+}

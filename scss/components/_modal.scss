@@ -1,0 +1,37 @@
+.modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 100; 
+}
+.is-hidden{
+    max-width: 500px;
+    padding: 45px;
+    z-index: 1;
+    
+}
+.form-modal-span{
+    display: block;
+    margin-bottom: 4px;
+}
+.btn-modal-close{
+    position: fixed;
+    right: 8px;
+    top: 8px;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    &:hover{
+        color: #2196F3;
+    }
+}
+.modal-close-icon{
+    fill: currentColor;
+}

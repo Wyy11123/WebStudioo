@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/recet.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
-            <a class="logo" href=""><span class="header-logo">Web</span>Studio</a>
+            <div class="header-wrapper">
+            <a class="logo" href=""><span class="web">Web</span>Studio</a>
             <nav class="nav">
                 <ul class="nav-list">
                     <li class="nav-list-item"><a class="nav-list-link" href="./index.html">Студія</a></li>
@@ -21,89 +24,120 @@
             </nav>
             <ul class="contact-list">
                 <li class="contact-list-item"><a class="contact-list-link" href="">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="none" class="nav-svg">
-                            <path fill="#757575" d="M14.5 0h-13C.673 0 0 .673 0 1.5v9c0 .827.673 1.5 1.5 1.5h13c.827 0 1.5-.673 1.5-1.5v-9c0-.827-.673-1.5-1.5-1.5Zm0 1c.068
-                             0 .133.014.192.039L8 6.839l-6.692-5.8A.498.498 0 0 1 1.5 1h13Zm0 10h-13a.5.5 0 0 1-.5-.5V2.095l6.672 5.783a.5.5 0 0 0 .656
-                              0L15 2.095V10.5a.5.5 0 0 1-.5.5Z" />
-                        </svg>info@devstudio.com</a></li>
+                    <svg width="16" height="12" class="contact-list-icon">
+                        <use href="./symbol-defs.svg#icon-envelope-hover-1"></use>
+                    </svg>
+                    info@devstudio.com</a></li>
                 <li class="contact-list-item"><a class="contact-list-link" href="">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" fill="none" class="nav-svg">
-                            <path fill="#757575"
-                                d="M8.5 0h-7C.673 0 0 .673 0 1.5v13c0 .827.673 1.5 1.5 1.5h7c.827 0 1.5-.673 1.5-1.5v-13C10 .673 9.327 0 8.5 0Zm-7 1h7a.5.5 0 0 1 .5.5V12H1V1.5a.5.5 0 0 1 .5-.5Zm7 14h-7a.5.5 0 0 1-.5-.5V13h8v1.5a.5.5 0 0 1-.5.5Z" />
-                            <path fill="#757575"
-                                d="M2.354 13.739a.445.445 0 0 1 0 .66.525.525 0 0 1-.708 0 .445.445 0 0 1 0-.66.525.525 0 0 1 .708 0Z" />
-                        </svg>+38 096 111 11 11</a></li>
-            </ul>
+                    <svg width="10" height="16" class="contact-list-icon">
+                        <use href="./symbol-defs.svg#icon-smartphone"></use>
+                    </svg>+38 096 111 11 11
+                </a>
+            </li>
+        </ul>
+            </div>
         </div>
     </header>
-        <main class="main-portfolio">
-            <ul class="main-bar">
-                <li class="main-bar-item"><button class="main-bar-button">Усі</button></li>
-                <li class="main-bar-item"><button class="main-bar-button">Веб-сайти</button></li>
-                <li class="main-bar-item"><button class="main-bar-button">Додатки</button></li>
-                <li class="main-bar-item"><button class="main-bar-button">Дизайн</button></li>
-                <li class="main-bar-item"><button class="main-bar-button">Маркетинг</button></li>
+        <main class="portfolio">
+            <ul class="portfolio-bar">
+                <li class="portfolio-item"><button class="portfolio-button">Усі</button></li>
+                <li class="portfolio-item"><button class="portfolio-button">Веб-сайти</button></li>
+                <li class="portfolio-item"><button class="portfolio-button">Додатки</button></li>
+                <li class="portfolio-item"><button class="portfolio-button">Дизайн</button></li>
+                <li class="portfolio-item"><button class="portfolio-button">Маркетинг</button></li>
             </ul>
-            <ul class="main-portfolio-content">
-                <li class="main-portfolio-content-items">
+            <ul class="portfolio-content">
+                <li class="portfolio-content-items">
                     <img class="content-img" src="./img/port1.png" alt="#">
                     <h3 class="content-title">Технокряк</h3>
                     <p class="content-text">Веб-сайт</p>
                 </li>
-                <li class="main-portfolio-content-items">
+                <li class="portfolio-content-items">
                     <img class="content-img" src="./img/port2.png" alt="#">
                     <h3 class="content-title">Постер New Orlean vs Golden Star</h3>
                     <p class="content-text">Дизайн</p>
                 </li>
-                <li class="main-portfolio-content-items">
+                <li class="portfolio-content-items">
                     <img class="content-img" src="./img/port3.png" alt="#">
                     <h3 class="content-title">Ресторан Seafood</h3>
                     <p class="content-text">Додаток</p>
                 </li>
-                <li class="main-portfolio-content-items">
+                <li class="portfolio-content-items">
                     <img class="content-img" src="./img/port4.png" alt="#">
                     <h3 class="content-title">Проєкт Prime</h3>
                     <p class="content-text">Маркетинг</p>
                 </li>
-                <li class="main-portfolio-content-items">
+                <li class="portfolio-content-items">
                     <img class="content-img" src="./img/port5.png" alt="#">
                     <h3 class="content-title">Проєкт Boxes</h3>
                     <p class="content-text">Додаток</p>
                 </li>
-                <li class="main-portfolio-content-items">
+                <li class="portfolio-content-items">
                     <img class="content-img" src="./img/port6.png" alt="#">
                     <h3 class="content-title">Inspiration has no Borders</h3>
                     <p class="content-text">Веб-сайт</p>
                 </li>
-                <li class="main-portfolio-content-items">
+                <li class="portfolio-content-items">
                     <img class="content-img" src="./img/port7.png" alt="#">
                     <h3 class="content-title">Видання Limited Edition</h3>
                     <p class="content-text">Дизайн</p>
                 </li>
-                <li class="main-portfolio-content-items">
+                <li class="portfolio-content-items">
                     <img class="content-img" src="./img/port8.png" alt="">
                     <h3 class="content-title">Проєкт LAB</h3>
                     <p class="content-text">Маркетинг</p>
                 </li>
-                <li class="main-portfolio-content-items">
+                <li class="portfolio-content-items">
                     <img class="content-img" src="./img/port9.png" alt="#">
                     <h3 class="content-title">Growing Business</h3>
                     <p class="content-text">Додаток</p>
                 </li>
             </ul>
         </main>
-    <footer class="footer">
-        <div class="footer-content">
-            <a class="foot-logo" href=""><span class="header-logo">Web</span><span class="footer-logo">Studio</span></a>
-            <address class="address">
-                <ul class="footer-list">
-                    <li class="footer-list-item1"><a class="footer-list-link1" href="">м. Київ, пр-т Лесі Українки, 26</a>
-                    </li>
-                    <li class="footer-list-item2"><a class="footer-list-link2" href="">info@devstudio.com</a></li>
-                    <li class="footer-list-item2"><a class="footer-list-link2" href="">+38 096 111 11 11</a></li>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-wrap">
+                <div class="footer-info">
+                <a class="logo" href=""><span class="web">Web</span><span class="footer-logo">Studio</span></a>
+                <address class="address">
+                    <ul class="footer-list">
+                        <li class="footer-list-item1"><a class="footer-list-link1" href="">м. Київ, пр-т Лесі Українки, 26</a></li>
+                        <li class="footer-list-item2"><a class="footer-list-link2" href="">info@devstudio.com</a></li>
+                        <li class="footer-list-item2"><a class="footer-list-link2" href="">+38 096 111 11 11</a></li>
+                    </ul>
+                </address>
+                </div>
+                <div class="social">
+                    <h2 class="social-title">приєднуйтесь</h2>
+                <ul class="social-list">
+                    <li class="social-list-item"><a href="" class="footer-list-contact-link">
+                        <svg width="20" height="20">
+                            <use href="./symbol-defs.svg#icon-instagram"></use>
+                        </svg>
+                    </a></li>
+                    <li class="social-list-item"><a href="" class="footer-list-contact-link">
+                        <svg width="20" height="20">
+                            <use href="./symbol-defs.svg#icon-twitter"></use>
+                        </svg>
+                    </a></li>
+                    <li class="social-list-item"><a href="" class="footer-list-contact-link">
+                        <svg width="20" height="20">
+                            <use href="./symbol-defs.svg#icon-Vector"></use>
+                        </svg>
+                    </a></li>
+                    <li class="social-list-item"><a href="" class="footer-list-contact-link">
+                        <svg width="25" height="25">
+                            <use href="./symbol-defs.svg#icon-linkedin"></use>
+                        </svg>
+                    </a></li>
                 </ul>
-            </address>
-        </div>
-    </footer>
+                </div> 
+                <div class="footer-content-third-blok">
+                    <h2 class="footer-input-title">Підпишіться на розсилку</h2>
+                    <input type="text" class="footer-input" placeholder="E-mail">
+                    <button class="footer-button">Підписатися</button>
+                </div>
+            </div>
+        </footer>
 </body>
 </html>
