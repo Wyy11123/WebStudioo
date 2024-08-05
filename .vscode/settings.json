@@ -21,5 +21,6 @@
         "> 1%",
         "last 2 versions"
     ],
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
+    "liveServer.settings.port": 5501
 }

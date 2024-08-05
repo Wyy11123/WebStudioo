@@ -29,9 +29,6 @@
         }
     }
     &-icon{
-        fill: #AFB1B8;
-        &:hover{
-            fill: #2196F3;
-        }
-    }
+        fill: currentColor;
+}
 }
