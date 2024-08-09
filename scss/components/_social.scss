@@ -14,16 +14,15 @@
     gap: 10px;
     padding-bottom: 30px;
     &-link {
+        border-radius: 50%;
         width: 44px;
         height: 44px;
         display: flex;
         justify-content: center;
         align-items: center;
-        color: gray;
+        color: rgb(255, 255, 255);
         &:hover{
-            color: #fff;
             background-color: #2196F3;
-            border-radius: 50%;
         }
     }
     &-icon{

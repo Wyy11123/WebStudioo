@@ -57,6 +57,18 @@
         align-items: center;
         gap: 20px;
         margin-bottom: 15px;
+        &-link{
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #AFB1B8;
+        &:hover{
+            background-color: #2196F3;
+            color: #ffff;
+        }
     }
 }
 .team-link{
@@ -66,4 +78,8 @@
     &:hover{
         background-color: #2196F3;
     }
+}
+}
+.team-list-contact-icon{
+    fill: currentColor;
 }

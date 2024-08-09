@@ -18,7 +18,7 @@
         padding: 6px 25px;
         font-size: 16px;
     }
-    &-content{
+    &-list{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -28,4 +28,10 @@
             border: 1px solid #EEEEEE;
         }
     }
+}
+.portfolio-list-content-wrap{
+    padding: 20px 24px ;
+}
+.portfolio-list-title{
+    margin-bottom: 4px;
 }

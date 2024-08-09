@@ -54,13 +54,31 @@
 .footer-form{
     margin: 0 auto;
     text-align: center;
+    @include desc(1199px){
+        display: flex;
+        gap: 12px;
+    }
 }
 .footer-input{
     display: block;
     width: 100%;
     margin-top: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 5px;
+    height: 42px;
 }
 .footer-button{
-    margin: 0 auto;
-    margin-top: 20px;
+    display: block;
+        margin: 0 auto;
+    margin-top: 20px; 
+    @include desc(1199px){
+        display: inline-block;
+    }
+}
+.footer-form-text{
+    font-family: Roboto;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 0.02em;
+    line-height: 16.41px;
 }
