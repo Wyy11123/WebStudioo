@@ -1,8 +1,41 @@
 .hero{
-    background-color: #2F303A;
     padding: 118px 0;
-    @include desc(1199px) {
+    padding: 118px 0;
+    @include bg-image("../img/header-mob1x.webp", "../img/header-mob1x.jpg", $gradient);
+    @include retina(2, 192dpi, 2dppx) {
+        @include bg-image("../img/header-mob2x.webp", "../img/header-mob2x.jpg", $gradient);
+    }
+
+    @include retina(3, 288dpi, 3dppx) {
+        @include bg-image("../img/header-mob3x.webp", "../img/header-mob3x.jpg", $gradient);
+    }
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    @include tab(768px) {
+        @include bg-image("../img/header-tab1x.webp", "../img/header-tab1x.jpg", $gradient);
+        
+        @include retina(2, 192dpi, 2dppx) {
+            @include bg-image("../img/header-tab2x.webp", "../img/header-tab2x.jpg", $gradient);
+        }
+
+        @include retina(3, 288dpi, 3dppx) {
+            @include bg-image("../img/header-tab3x.webp", "../img/header-tab3x.jpg", $gradient);
+        }
+    }
+
+    @include desc(1200px) {
         padding: 200px 0;
+        @include bg-image("../img/header-desc1x.webp", "../img/header-desc1x.jpg", $gradient);
+        
+        @include retina(2, 192dpi, 2dppx) {
+            @include bg-image("../img/header-desc2x.webp", "../img/header-desc2x.jpg", $gradient);
+        }
+
+        @include retina(3, 288dpi, 3dppx) {
+            @include bg-image("../img/header-desc3x.webp", "../img/header-desc3x.jpg", $gradient);
+        }
     }
     &-title{
         font-family: Roboto;
